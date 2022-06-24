@@ -20,9 +20,9 @@ class Car {
 
     //some methods
     public void print_Cars(){
-        for(int i = 0; i < )
+
     }
-    
+
     //main 
     public static void main(String[] args){
         System.out.println("test");

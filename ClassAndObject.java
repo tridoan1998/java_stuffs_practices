@@ -1,4 +1,4 @@
-class Main {
+class Main im{
     int x;
 
     //constructor
