@@ -7,6 +7,13 @@ public class GroupChat {
     static String name;
     static volatile boolean finished = false;
     public static void main(String[] args) {
-        System.out.println(args.length);
+        if (args.length != 2)
+        {
+            System.out.printlm("Two argunments required: <multicast-host> <port-number>")
+        }
+        else
+        {
+            
+        }
     }
 }
