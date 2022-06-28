@@ -56,3 +56,42 @@ class TicTacToeFrame extends JFrame {
     }
 }
 
+class GameListener implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+        count++;
+        JButton b = (JButton)e.getSource();
+        Integer[] index = (Integer[]) b.getClientProperty("INDEX");
+
+        b.putClientProperty("OWNER", turn);
+        Icon ico = new ImageIcon(turn.toString()+".gif");
+        b.setIcon(ico);
+        b.setEnabled(false);
+        boolean result = checkVictoryCondition(index);
+        if (result)
+        {
+            JOptionPane.showMessageDialog(null, "Player " + turn.toString() + " Wins");
+            initComponents();
+        }
+        else 
+        {
+            if(turn == 1 )
+            {
+                turn = 2;
+                statusBar.setText("Player2's turn");
+            }
+            else
+            {
+                turn = 1 
+                statusBar.setText("Player1's turn");
+            }
+        }
+        if(count == 9)
+        {
+            JOptionPane.showMessageDialog(null, "Match is a draw!");
+            initComponents();
+        }
+
+
+    }
+}
+
