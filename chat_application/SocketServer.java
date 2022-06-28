@@ -6,11 +6,7 @@ import java.net.*;
 import java.util.*;
 
 public class SocketServer {
-    try{ 
-        
-    }catch(IOException e) {
-        System.out.println(e + "-> ServerSocket failed");
-    }
+    
 }
 
 class ServerThread extends Thread {

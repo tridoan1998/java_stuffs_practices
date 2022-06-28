@@ -5,7 +5,10 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class Login extends JFrame {
-    public static void main(String[] args) {
+
+
+    //making this constructor to call the Frame, not in main method
+    Login() {
         //calling constructor for JFrame to work
         JFrame login_frame = new JFrame("Login Page for the bank");
         //set the size and the location of the frame
@@ -47,5 +50,11 @@ public class Login extends JFrame {
 
         panel.add(username_text);
         panel.add(password_text);
+    }
+
+    public static void main(String[] args) {
+        Login login = new Login();
+
+
     }
 }
