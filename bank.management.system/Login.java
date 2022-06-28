@@ -6,11 +6,9 @@ import java.awt.event.*;
 
 public class Login extends JFrame {
 
-
-    //making this constructor to call the Frame, not in main method
     Login() {
         //calling constructor for JFrame to work
-        JFrame login_frame = new JFrame("Login Page for the bank");
+        JFrame login_frame = new JFrame("Bank Login Page");
         //set the size and the location of the frame
         login_frame.setSize(700, 500);
         //set location of the frame
@@ -50,8 +48,18 @@ public class Login extends JFrame {
 
         panel.add(username_text);
         panel.add(password_text);
+
+        String path_picture = "login_bank_image.png"; //image path
+        JLabel label_picture = new JLabel();    //this will hold the image
+        label_picture.setIcon(new ImageIcon(path_picture)); //Sets the image to be displayed as an icon
+        Dimension label_picture_size = label_picture.getPreferredSize(); //Gets the size of the image
+        label_picture.setBounds(50, 30, label_picture_size.width, label_picture_size.height); //Sets the location of the image
+
+        panel.add(label_picture);
+
     }
 
+    
     public static void main(String[] args) {
         Login login = new Login();
 
