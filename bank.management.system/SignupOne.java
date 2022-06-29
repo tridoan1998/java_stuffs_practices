@@ -9,7 +9,9 @@ import java.awt.event.*;
 public class SignupOne {
  
     //creating all needed variables
-
+    JLabel ;
+    JButton ;
+    JTextField ;
 
     //performing all size, locaiton, and needed operations for those variables above
     SignupOne() {
