@@ -12,7 +12,7 @@ public class SignupOne {
     //creating all needed variables
     //JLabel ;
     //JButton ;
-    JTextField name_textfield, fathername_textfield;
+    JTextField name_textfield, fathername_textfield, ;
     //JDateChooser date_of_birth;
 
     //performing all size, locaiton, and needed operations for those variables above
@@ -91,6 +91,21 @@ public class SignupOne {
         Dimension pin_code_label_size = pin_code_label.getPreferredSize();
         pin_code_label.setBounds(50, 520, pin_code_label_size.width, pin_code_label_size.height);
         panel.add(pin_code_label);
+
+
+
+        name_textfield = new JTextField(23);
+        fathername_textfield = new JTextField(23);
+
+        Dimension name_textfield_size = name_textfield.getPreferredSize();
+        Dimension fathername_textfield_size = fathername_textfield.getPreferredSize();
+
+        name_textfield.setBounds(160, 70, name_textfield_size.width, name_textfield_size.height);
+        fathername_textfield.setBounds(160, 110, fathername_textfield_size.width, fathername_textfield_size.height);
+       
+        panel.add(name_textfield);
+        panel.add(fathername_textfield);
+
 
         application_form_frame.add(panel);
     }
