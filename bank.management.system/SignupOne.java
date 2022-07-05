@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;  
-
+//import com.toedter.calendar.JDateChooser;
+import java.text.*;
 
 //extends JFrame implements ActionListener 
 public class SignupOne {
@@ -13,7 +14,6 @@ public class SignupOne {
     //JLabel ;
     //JButton ;
     JTextField name_textfield, fathername_textfield, email_address_textfield, address_textfield, city_textfield, state_textfield, pin_code_textfield;
-    //JDateChooser date_of_birth;
 
     //performing all size, locaiton, and needed operations for those variables above
     SignupOne() {
@@ -105,6 +105,13 @@ public class SignupOne {
        
         panel.add(name_textfield);
         panel.add(fathername_textfield);
+
+        //adding a date of birth calendar for user to choose from   
+        String pattern = "MM-dd-yyyy";
+        SimpleDateFormat format = new SimpleDateFormat(pattern);
+        JFormattedTextField  dateTextField = new JFormattedTextField(format);
+        dateTextField.setBounds(160, 160, 290, 30);
+        panel.add(dateTextField);
 
 
         application_form_frame.add(panel);
