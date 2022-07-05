@@ -12,7 +12,7 @@ public class SignupOne {
     //creating all needed variables
     //JLabel ;
     //JButton ;
-    JTextField name_textfield, fathername_textfield, ;
+    JTextField name_textfield, fathername_textfield, email_address_textfield, address_textfield, city_textfield, state_textfield, pin_code_textfield;
     //JDateChooser date_of_birth;
 
     //performing all size, locaiton, and needed operations for those variables above
