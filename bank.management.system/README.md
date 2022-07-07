@@ -8,4 +8,4 @@ Socket programming means to have two applications to talk to each other using bu
 1. Creating a Login class extends JFrame.
 2. putting JButton, JPanel, JTextField as static variables outside of constructor.
 3. Creating the ActionListener for those buttons above to bascially making those buttons active. 
-4. Creating the application form page for the application, follow similar logic as creating the login. Challenge to have problem with JCalendar as the compiler does not understand how it works. 
+4. Creating the application form page for the application, follow similar logic as creating the login (SignupOne.java). Challenge to have problem with JCalendar as the compiler does not understand how it works. Solving this problem by making the JCalendar to input users date of birth, insteads d JTextField.
