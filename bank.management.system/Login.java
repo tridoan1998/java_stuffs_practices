@@ -67,7 +67,7 @@ public class Login extends JFrame implements ActionListener{
         panel.add(username_text);
         panel.add(password_text);
 
-        String path_picture = "login_bank_image.png"; //image path
+        String path_picture = "../icons/login_bank_image.png"; //image path
         JLabel label_picture = new JLabel();    //this will hold the image
         label_picture.setIcon(new ImageIcon(path_picture)); //Sets the image to be displayed as an icon
         Dimension label_picture_size = label_picture.getPreferredSize(); //Gets the size of the image
