@@ -12,6 +12,5 @@ Socket programming means to have two applications to talk to each other using bu
 
 ### Note:
 1. if we want to add action to the buttons and stuffs. We will have to implements ActionListener at the beginning of the class, add a method named `public void actionPerformed(ActionEvent e)`, after implemented buttons, type `button.addActionListener(this);`
-
-
+TCP: transmission control protocol, which is the standard way of data being tranfer from client to server and from server to client. The requirement is that both sides need to establish the connection before data can be transfer, this is called data oriented. In Java, we would need to create a Socket object in order to establish the connection. Two parameters needed which is servername and port number, servername can be 127.0.0.1 (IP Address) and port number can be open ports numbers
 
