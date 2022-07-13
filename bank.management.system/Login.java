@@ -11,7 +11,7 @@ public class Login extends JFrame implements ActionListener{
     JPasswordField password_text;
     Login() {
         //calling constructor for JFrame to work
-        JFrame login_frame = new JFrame("Bank Login Page");
+        JFrame login_frame = new JFrame("The Bank Login Page");
         //set the size and the location of the frame
         login_frame.setSize(700, 500);
         //set location of the frame
@@ -80,10 +80,10 @@ public class Login extends JFrame implements ActionListener{
     //adding action to sign in, clear, and sign up buttons
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == signin_button) {
-            username_text.setText("signin_button");
+            JOptionPane.showMessageDialog(this, username_text.getText());
         } else if (ae.getSource() == clear_button) {
-            username_text.setText("clear_button");
-
+            username_text.setText("");
+            password_text.setText("");
         } else if (ae.getSource() == signup_button) {
             username_text.setText("signup_button");
 
