@@ -80,6 +80,7 @@ public class Login extends JFrame implements ActionListener{
     //adding action to sign in, clear, and sign up buttons
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == signin_button) {
+            System.out.println(username_text.getText());
             JOptionPane.showMessageDialog(this, username_text.getText());
         } else if (ae.getSource() == clear_button) {
             username_text.setText("");
