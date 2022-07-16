@@ -6,12 +6,14 @@ import java.awt.event.*;
 
 public class Login extends JFrame implements ActionListener{
 
+    JFrame login_frame;
     JButton signin_button, clear_button, signup_button;
     JTextField username_text;
     JPasswordField password_text;
-    Login() {
+
+    public Login() {
         //calling constructor for JFrame to work
-        JFrame login_frame = new JFrame("The Bank Login Page");
+        login_frame = new JFrame("The Bank Login Page");
         //set the size and the location of the frame
         login_frame.setSize(700, 500);
         //set location of the frame
@@ -74,26 +76,23 @@ public class Login extends JFrame implements ActionListener{
         label_picture.setBounds(50, 30, label_picture_size.width, label_picture_size.height); //Sets the location of the image
 
         panel.add(label_picture);
-
     }
 
     //adding action to sign in, clear, and sign up buttons
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == signin_button) {
-            System.out.println(username_text.getText());
-            JOptionPane.showMessageDialog(this, username_text.getText());
+            login_frame.setVisible(false);
+            login_frame.setVisible(false);
         } else if (ae.getSource() == clear_button) {
             username_text.setText("");
             password_text.setText("");
         } else if (ae.getSource() == signup_button) {
-            username_text.setText("signup_button");
-
+            login_frame.setVisible(false);
+            Dummy dummy = new Dummy();
         }
     }
     
     public static void main(String[] args) {
         Login login = new Login();
-
-
     }
 }

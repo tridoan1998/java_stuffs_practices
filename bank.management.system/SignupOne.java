@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;  
-//import com.toedter.calendar.JDateChooser;
 import java.text.*;
 
 //extends JFrame implements ActionListener 
@@ -16,7 +15,7 @@ public class SignupOne {
     JTextField name_textfield, fathername_textfield, email_address_textfield, address_textfield, city_textfield, state_textfield, pin_code_textfield;
 
     //performing all size, locaiton, and needed operations for those variables above
-    SignupOne() {
+    public SignupOne() {
         JFrame application_form_frame = new JFrame("Application form page");
         application_form_frame.setSize(700, 500);
         //set location of the frame
