@@ -7,7 +7,7 @@ import java.util.*;
 import java.text.*;
 
 //extends JFrame implements ActionListener 
-public class SignupOne {
+public class SignupOne extends JFrame implements ActionListener {
  
     //creating all needed variables
     //JLabel ;
@@ -117,9 +117,8 @@ public class SignupOne {
     }
 
     //implement the ActionListener for some buttons
+    public void actionPerformed(ActionEvent ae) {
 
-    //main method to call the class
-    public static void main(String[] args) {
-        SignupOne signup = new SignupOne();
     }
+
 }

@@ -76,6 +76,7 @@ public class Login extends JFrame implements ActionListener{
         label_picture.setBounds(50, 30, label_picture_size.width, label_picture_size.height); //Sets the location of the image
 
         panel.add(label_picture);
+
     }
 
     //adding action to sign in, clear, and sign up buttons
@@ -88,7 +89,7 @@ public class Login extends JFrame implements ActionListener{
             password_text.setText("");
         } else if (ae.getSource() == signup_button) {
             login_frame.setVisible(false);
-            Dummy dummy = new Dummy();
+            new SignupOne().setVisible(true);
         }
     }
     
